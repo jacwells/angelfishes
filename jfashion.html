@@ -1,0 +1,640 @@
+<head>
+    <title>Alex's J-Rock/Fashion Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+    <style type='text/css'>
+        .starborn {
+    -webkit-mask-image: url(https://i.imgur.com/iE8ff6N.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    width: 200px;
+    height: auto;
+    }
+    .lace2 {
+    -webkit-mask-image: url(https://i.imgur.com/MmBKZUL.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    width: 200px;
+    height: auto
+    }  
+    .wigheart {
+    -webkit-mask-image: url(https://i.imgur.com/mgYPn13.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    width: 180px;
+    height: auto
+    } 
+    body, div, a {
+        font: 9pt monospace;
+        color: #3b4269;
+        margin-bottom: 1px;
+        line-height: 12px;
+        text-align: left;
+        font-family: 'Silkscreen', monospace;;
+       padding-top: 10px;
+       margin: 0px;
+       font-size: 90%;
+       background-color: transparent;
+       overflow: scroll;    
+    }
+    
+    b {
+        color: #150578;
+        font: 11px ;
+        font-family: 'Silkscreen', monospace;;
+        font-weight: bold;
+    }
+    
+    body {
+        overflow-x:hidden;
+        height:100%; 
+        background-color: black;
+    }
+    
+    u {
+        color: #3943B7;
+        font: 12px Silkscreen;
+        font-weight: bold;
+        text-decoration-style: dotted;
+        background-color: #78C0E0
+    }
+    
+    h1 {
+        color: #0E0E52;
+        font: 28px Silkscreen;
+        text-decoration-style: dashed;
+        padding-left: -5px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: -2px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+    h2 {
+        color: #0E0E52;
+        background-color: #449DD1;
+        font: 10px; 
+        font-family: 'Silkscreen', monospace;;
+        padding-left: 15px;
+        padding: 5px 10px 5px;
+        text-align: left;
+        margin-left: -1px;
+        margin-bottom: 1px;
+        margin-top: 2px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+    
+    
+    a:link, a:visited, a:active {
+        color: #78C0E0;
+        background: none;
+        font-size: 9px;
+        font-family: 'Silkscreen', monospace;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    a:hover {
+        color: #3943B7;
+        font-size: 9px;
+        font-family: 'Silkscreen', monospace;
+    }
+    
+    .wrapper{
+       margin: 0px auto;
+       width: 367px;
+       background-color: #3943B7
+    }
+    .header{
+       float: left;
+       width: 100%;
+       background-color: #0E0E52
+    }
+    .content{
+       float: left;
+       width: 100%;
+       background-image: url('https://file.garden/ZZOi0LOs0CiXN99M/1.5.23/139.GIF');
+    }
+    
+    #menu {
+        background: #3943B7;
+        color: #FFF;
+        height: 22px;
+        padding-left: 18px;
+        border-radius: 0px;
+    }
+    #menu ul, #menu li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    #menu ul {
+        width: 100%;
+    }
+    #menu li {
+        float: left;
+        display: inline;
+        position: relative;
+    }
+    #menu a {
+        display: block;
+        line-height: 22px;
+        padding: 0 14px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+    #menu a.dropdown-arrow:after {
+        content: "\002B";
+        margin-left: 5px;
+    }
+    #menu li a:hover {
+        color: #150578;
+        background: #78C0E0;
+    }
+    #menu input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 22px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer
+    }
+    #menu label {
+        display: none;
+        line-height: 22px;
+        text-align: center;
+        position: absolute;
+        left: 35px
+    }
+    #menu label:before {
+        font-size: 1.6em;
+        content: "\2261"; 
+        margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+        height: auto;
+        overflow: hidden;
+        width: 170px;
+        background: #78C0E0;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+    #menu ul.sub-menus li {
+        display: block;
+        width: 100%;
+    }
+    #menu ul.sub-menus a {
+        color: #0E0E52;
+        font-size: 11px;
+    }
+    #menu li:hover ul.sub-menus {
+        display: block
+    }
+    #menu ul.sub-menus a:hover{
+        background: #3943B7;
+        color: #78C0E0;
+    }
+    p {
+        padding-left: 5px;
+    }
+    @media screen and (max-width: 800px){
+        #menu {position:relative}
+        #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+        #menu ul.sub-menus {width:100%;position:static;}
+        #menu ul.sub-menus a {padding-left:30px;}
+        #menu li {display:block;float:none;width:auto;}
+        #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+        #menu input {z-index:4}
+        #menu input:checked + label {color:white}
+        #menu input:checked + label:before {content:"\00d7"}
+        #menu input:checked ~ ul {display:block}
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="header">
+        <nav id='menu'>
+      <ul>
+        <li><a href='/'>home</a></li>
+        <li><a href='https://angelfishes.neocities.org/home'>ANGELFISHES</a></li>
+        <li><a class='dropdown-arrow' href='http://'>Fashion inspiration</a>
+          <ul class='sub-menus'>
+            <li><a href='/'>Ryutarou Arimura<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+            <li><a href='/'>Atsushi Sakurai<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+            <li><a href='/'>Toshiya<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+          </ul>
+        </li>
+        <li><a class='dropdown-arrow' href='http://'>Visual Kei</a>
+          <ul class='sub-menus'>
+            <li><a href='/'>Plastic Tree<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+            <li><a href='/'>BUCK-TICK<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+            <li><a href='/'>The GazettE<img src='https://files.catbox.moe/ocrqrd.gif'></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+        <div class="content">
+            <style>
+                #scroll1 {
+                height: fit-content;
+                width: fit-content;
+                padding: 10px;
+                font-size: 16px;
+                overflow: auto;
+                border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                border: 3px solid #0E0E52;
+                background-color: #78C0E0;
+                margin-left: 75px;
+                }
+                #leftfly {
+                    z-index: 1000;
+                    width: 50px;
+                    left: 375px;
+                    top: 50px;
+                    position: absolute;
+                }
+                #rightfly {
+                    z-index:1000;
+                    right: 375px;
+                    top: 60px;
+                    position: absolute;
+                    transform: scaleX(-1);
+                }
+                #tv {
+                    z-index:1000;
+                    right: 327px;
+                    top: 450px;
+                    position: absolute;
+                }
+                #microscope {
+                    z-index:1000;
+                    left: 290px;
+                    top: 200px;
+                    position: absolute;
+                }
+                #fish1 {
+                    z-index:1000;
+                    left: 520px;
+                    bottom: -100px;
+                    position: absolute;
+                    rotate: -10deg;
+                }
+                #bottle2 {
+                    z-index:1000;
+                    right: 300px;
+                    top: 115px;
+                    position: absolute;
+                }
+                #cloud {
+                    z-index:25;
+                    left: 350px;
+                    top: 115px;
+                    position: absolute;
+                }
+                #fish2 {
+                    z-index:1000;
+                    left: 350px;
+                    bottom: 10px;
+                    position: absolute;
+                }
+                #shark1 {
+                    z-index:1000;
+                    right: 395px;
+                    top: 130px;
+                    position: absolute;
+                }
+                #choco {
+                    z-index:1000;
+                    right: 355px;
+                    bottom:100px;
+                    position: absolute;
+                }
+                #staryu {
+                    z-index:1000;
+                    left: 10px;
+                    bottom:-100px;
+                    position: absolute;
+                }
+                #acchan1 {
+                    z-index:1000;
+                    right: 10px;
+                    top:-50px;
+                    position: absolute;
+                }
+                #kyo1 {
+                    z-index:999;
+                    right: 200px;
+                    top:150px;
+                    position: absolute; 
+                }
+                #girlie {
+                    z-index: 1000;
+                    right: 0px;
+                    bottom: 10px;
+                    position: absolute;
+                }
+                #tank1 {
+                    z-index: 1000;
+                    right: 100px;
+                    bottom: -150px;
+                    position: absolute;
+                }
+                #clip1 {
+                    z-index: 1000;
+                    left: -50px;
+                    top: -40px;
+                    position: absolute;
+                    rotate: 1deg;
+                }
+                #heart1 {
+                    z-index: 1000;
+                    left: 500px;
+                    top: 125px;
+                    position: absolute;
+                }
+                #door {
+                    z-index: 998;
+                    right: 10px;
+                    top: 100px;
+                    position: absolute;
+                }
+                #tv2 {
+                    z-index: 998;
+                    left: 17px;
+                    top: 235px;
+                    position: absolute;
+                }
+                #ryu2 {
+                    z-index: 999;
+                    left:85px;
+                    top: 270px;
+                    position: absolute;
+                }
+                #thelilac {
+                    z-index: 998;
+                    left:175px;
+                    bottom: -100px;
+                    position: absolute;
+                }
+                #crossneck {
+                    z-index: 1000;
+                    left:250px;
+                    bottom: 75px;
+                    position: absolute;
+                }
+                #skull1 {
+                    z-index: 999;
+                    left:193px;
+                    top: 0px;
+                    position: absolute; 
+                }
+                #toshiya2 {
+                    z-index: 998;
+                    left:100px;
+                    top: 255px;
+                    position: absolute;
+                }
+                #cell {
+                    z-index: 998;
+                    right:12px;
+                    top: 255px;
+                    position: absolute;
+                }
+                #flow1 {
+                    z-index: 999;
+                    left: 78px;
+                    top: 110px;
+                    position: absolute;
+                }
+                #clip2 {
+                    z-index: 999;
+                    top: 57px;
+                    right: 203px;
+                    position: absolute;
+                    rotate: -30deg;
+                }
+                #stars {
+                    z-index: 1000;
+                    bottom: 73px;
+                    right: 173px;
+                    position: absolute;
+                    rotate: -30deg;
+                }
+                #tomb {
+                    z-index: 998;
+                    top: 190px;
+                    right: 185px;
+                    position: absolute;
+                    rotate: 90deg;
+                }
+                #crus2 {
+                    z-index: 999;
+                    top: 140px;
+                    right: 500px;
+                    position: absolute;
+                    rotate: 90deg;
+                }
+                #jellya {
+                    z-index: 998;
+                    top: -57px;
+                    right: 160px;
+                    position: absolute;
+                    rotate: 90deg;
+                }
+                #jellyb {
+                    z-index: 998;
+                    bottom: -57px;
+                    left: 300px;
+                    position: absolute;
+                    rotate: -10deg;
+                }
+                #lava {
+                    z-index: 998;
+                    bottom: 100px;
+                    right:300px;
+                    position: absolute;
+                    rotate: -10deg;
+                }
+                #drip {
+                    z-index: 1000;
+                    top: -20px;
+                    left:-30px;
+                    position: absolute;
+                    rotate: -10deg;
+                }
+                #thecross {
+                    z-index: 1000;
+                    bottom: -150px;
+                    left:200px;
+                    position: absolute;
+                }
+                #fuck {
+                    z-index: 1000;
+                    bottom: -50px;
+                    left:-50px;
+                    position: absolute;
+                    rotate: 45deg;
+                    overflow: hidden;
+                }
+                #vinyl {
+                    z-index: 1000;
+                    top: 100px;
+                    left: -230px;
+                    position: absolute;
+                    rotate: 45deg;
+                }
+                </style>
+                <div id="scroll1">
+                    J-Rock and Visual Kei                </div>    
+                    <div id="leftfly">
+                        <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/borboletafloridaa.gif" width="50px" height="50px">
+                    </div>
+                    <div id="rightfly">
+                        <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/borboletafloridaa.gif" width="50px" height="50px">
+                    </div>
+        <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/44bf6fa4.png" width="100%" style="margin-top: 5px;">
+<div id="belowcut">
+        <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/ryucut-removebg-preview.png" width="100%" height="auto">
+        <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/44bf6fa4.png" width="100%" style="margin-top: 5px;">
+        <div id="tv">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_45ce7a2db19b21550909ac11f92455a0_077e1a6d_1280-removebg-preview.png" width="100px" height="auto">
+        </div>
+        <div id="microscope">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_23caa66f2196298930c22c2b39c51664_8978b301_1280-removebg-preview.png" width="200px" height="auto">
+        </div>
+        <div id="fish1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/83bxEnT.png" width="400px" height="auto">
+        </div>
+        <div id="bottle2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_cc95813fb9ea51740f3bbc5bcf593e34_d91b24a4_1280-removebg-preview.png" width="200px" height="auto">
+        </div>
+        <div id="cloud">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/clouddd.png" width="150px" height="auto">
+        </div>
+        <div id="fish2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/aftonopila.png" width="200px" height="auto">
+        </div>
+        <div id="shark1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/27.png" width="100px" height="auto">
+        </div>
+        <div id="choco">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/sticker20.png" width="100px" height="auto">
+        </div>
+        <div id="staryu">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/ryutaro.jpg" class="starborn">
+        </div>
+        <div id="acchan1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/%E3%82%B5%E3%83%A8%E3%83%8A%E3%83%A9%E4%BA%BA%E9%96%93.jpg" class="lace2">
+        </div>
+        <div id="kyo1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/fm248-deg-3.webp" class="wigheart">
+        </div>
+        <div id="girlie">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_inline_pylko5oPhr1wwoncr_500.png" width="100px" height="auto">
+        </div>
+        <div id="tank1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_inline_rbe0b95PgL1vefsve_500.gif" width="200px" height="auto">
+        </div>
+        <div id="clip1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.7.23/tumblr_9bc50f4bc25d52b632ca09ecf8d90bd4_06bb523d_1280.png" width="300px" height="auto">
+        </div>
+        <div id="heart1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_74bfa4a98481b5a23d28531eeffa9a33_c11989ff_250.webp" width=100px" height="auto">
+        </div>
+        <div id="door">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/1450135fd659kwn20.gif" width="300px" height="auto">
+        </div>
+        <div id="tv2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/1276303urza8wye3m.gif" width="300px" height="auto">
+        </div>
+        <div id="ryu2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/Ryutaro_Arimura__2000__1_-removebg-preview.png" width="100px" height="auto">
+        </div>
+        <div id="thelilac">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_550051d9957b4ee8ed687281f19577fd_3c3c4426_250.jpg" width="200px" height="auto">
+        </div>
+        <div id="crossneck">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_38bd2d58486fbc3f7da50032aa3aa657_70500093_1280.webp" width="400px">
+        </div>
+        <div id="skull1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/rheqekX.gif" width="200px">
+        </div>
+        <div id="toshiya2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/toshiya-removebg-preview.png" width="200px">
+        </div>
+        <div id="cell">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/Screenshot_2024-01-06_211410-removebg-preview.png" width="200px">
+        </div>
+        <div id="flow1">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.7.23/tumblr_o5j87jfTOT1tya9tfo10_1280.png" width="200px">
+        </div>
+        <div id="clip2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.7.23/tumblr_c40de863410bceebb9244109292b4e16_5a26ecff_1280.png" width="230px">
+        </div>
+        <div id="stars">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/tumblr_1e8cd927409edc0c2e060a181542d394_7b47df11_250.webp">
+        </div>
+        <div id="tomb">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/03d089cd.png">
+        </div>
+        <div id="crus2">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/9b06a2c0.png">
+        </div>
+        <div id="jellya">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_573fb2fbbe150be32a33e18b0f26949a_cfd229b3_400.webp">
+        </div>
+        <div id="jellyb">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_42da7be42ce5888b18ff8cae47c30c44_dd96bba0_500.webp" width="250px">
+        </div>
+        <div id="lava">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/21.gif" width="100px">
+        </div>
+        <div id="drip">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_acda11f510fb2bb5bd1f84dea217d62f_f004c7d4_540.webp" width="700px">
+        </div>
+        <div id="thecross">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_be88f0e90de44f8d140b1c5dbbb32744_2a22131f_400.webp" width="700px">
+        </div>
+        <div id="fuck">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_af54cf21c9c6acce4dd51a817f34848a_5ed09dcf_400.webp" width="350px">
+        </div>
+        <div id="vinyl">
+            <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.11.24/tumblr_6f6a772b3f9e85b4c6a36f0a89598913_5fdabba8_500.webp" width="400px">
+        </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        </div>
+    
+    </div>
+    </body>
+    <footer>
+        <p><a href="https://pomelo.lol/premades/home" style="color:#111;">Layout by Pom's Premades</a></p>
+    </footer>
+    </html>
+    
+            
+            
+            
+            
+            
+                
