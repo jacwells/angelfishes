@@ -11,9 +11,10 @@
                 background-size: 65px;
                 color: #D9E3F0;
                 background-image: var(--body-bg-image);
-                background-repeat: no-repeat;
+                background-repeat: repeat-x;
                 background-size: 100% 100%;
                           text-shadow: 2px 2px 5px black;
+                overflow-x: hidden;
             }
 
             #container {
@@ -81,7 +82,8 @@
                 font-size: smaller;
                 border: 5px dotted #8ed1fc;
                 flex: 1;
-                height: fit-content;
+                height: 40vw;
+                overflow: hidden;
             }
             #rightSidebar {
                 background-image: url('https://file.garden/ZZOi0LOs0CiXN99M/1.5.23/ciq60861.jpg');
@@ -92,7 +94,7 @@
                 font-size: smaller;
                 border: 5px dotted #8ed1fc;
                 flex: 1;
-                height: fit-content;
+                height: 40vw;
 
             }
 
@@ -100,15 +102,19 @@
                 background-color: #51a1de6b;
                 flex: 5;
                 padding: 20px;
-                overflow: hidden;
+                overflow: scroll;
+                height: 40vw;
             }
 
             footer {
                 background-color: #13092D;
                 width: 100%;
+                overflow: hidden;
                 height: 40px;
                 padding: 10px;
+                margin-top: 15px;
                 text-align: center !important;
+                line-height: .8;
             }
 
             h1,
@@ -180,6 +186,7 @@
             margin-right: 30px;
             margin-bottom: 15%;
             padding: 10px;
+            overflow-x: hidden;
            }
            #radio {
             float: right;
@@ -189,9 +196,9 @@
           }
            #jelly1 {
             float: right;
-            size: 100px 100px;
+            size: 50px 50px;
             position: absolute; 
-            right: 20px; 
+            right: 100px; 
             top: 10px; 
             z-index: 200;
            }
