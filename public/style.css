@@ -10,12 +10,10 @@
                 margin: 0;
                 background-size: 65px;
                 color: #D9E3F0;
-                background-image: var(--body-bg-image);
                 background-repeat: repeat-x;
                 background-size: 100% 100%;
                 background-color: #13092D;
                           text-shadow: 2px 2px 5px black;
-                overflow-x: hidden;
             }
 
             #container {
