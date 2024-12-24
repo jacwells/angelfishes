@@ -59,7 +59,7 @@
     height: 100%;
     overflow: auto;
     padding: 20px;
-    background-image: url('sparkle-bg.gif');
+    background-image: url('https://file.garden/ZZOi0LOs0CiXN99M/image005.gif');
     background-attachment: fixed;
     font-family: 'Courier New';
     font-size: 16px;
@@ -73,16 +73,16 @@
 	text-align: center;
     text-transform: uppercase;
     background-color: black;
-    color: #B766FF;
+    color: #6673ff;
     border: 1px solid white;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
     color: white;
-    border: 1px solid #B766FF;
+    border: 1px solid #66c9ff;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #B766FF;
+    color: #66c9ff;
     border: 1px solid white;
 }
 
@@ -102,7 +102,7 @@
     font-style: italic;
     font-weight: bold;
     text-align: right;
-    background-color: #2D0B52;
+    background-color: #120b52;
 }
 
 .c-inputWrapper {
@@ -112,10 +112,10 @@
 .c-input {
     padding: 4px;
     color: black;
-    border: 1px solid #2D0B52;
+    border: 1px solid #120b52;
 	outline: none;
 }
-.c-input:focus {border: 1px solid #B766FF;}
+.c-input:focus {border: 1px solid #66c9ff;}
 
 .c-textInput {
     width: calc(100% - 10px);
@@ -126,6 +126,7 @@
     display: block; 
     margin-left: auto; 
     margin-right: 0;
+    color: #520b0b;
 }
 #c_replyingText {
     color: white;
@@ -137,7 +138,7 @@
     margin-bottom: 15px;
     padding: 10px;
     border: 2px solid white;
-    background-color: #2D0B52; 
+    background-color: #120b52; 
 }
 .c-reply {
     display: block;
@@ -147,7 +148,7 @@
     margin-right: 0;
     padding: 10px;
     border: 2px solid white;
-    background-color: #2D0B52; 
+    background-color: #120b52; 
 }
 .c-reply:last-child {margin-bottom: 0;}
 .c-replyContainer {
@@ -168,7 +169,7 @@
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: #B766FF;
+    color: #66c9ff;
 }
 .c-site:hover {color: white;}
 .c-timestamp {
