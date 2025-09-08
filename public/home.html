@@ -70,9 +70,6 @@
                 </main>
 
 
-
-
-
         <div id="sticker1">
           <img src="https://file.garden/ZZOi0LOs0CiXN99M/1.6.23/aftonopila.png" width="100px">
         </div>
@@ -98,9 +95,6 @@
   <p>Font is Galmuri by <a href='https://galmuri.quiple.dev/'>Quiple</a></p>
 </footer>
 <style>
-#rightSidebar {
-  flex:3 !important;
-}
 main {
   width:fit-content;
 }
@@ -136,6 +130,25 @@ main {
   right: 330px;
   position: absolute;
   rotate: -40deg;
+}
+@media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside#leftSidebar {
+    width: 87%;
+  }
 }
 </style>
 </html>

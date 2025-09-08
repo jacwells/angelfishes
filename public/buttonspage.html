@@ -204,7 +204,7 @@
                     
                 </main>
                 
-            <aside id="rightSidebar" style="margin-left: 10px;"><h2>MY BUTTONS</h2>
+            <aside id="rightSidebar"><h2>MY BUTTONS</h2>
             <div class="box">
             <img src="graphics/button(1).png">
             </div>
@@ -219,9 +219,44 @@
           body {
             background-image: none;
           }
-          #leftSidebar {
+          aside#leftSidebar {
             overflow: scroll;
           }
+          aside#rightSidebar {
+            margin-left: 10px;
+          }
+          @media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside#leftSidebar {
+    width: 87%;
+    margin-left: 0;
+  }
+  aside#rightSidebar {
+    width: 87%;
+    margin-left: 0;
+  }
+  main {
+    overflow: hidden;
+    max-width: 100%;
+  }
+  footer {
+    overflow: hidden;
+    width: max-content;
+  }
+}
         </style>
 
 

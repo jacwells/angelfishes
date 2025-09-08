@@ -18,7 +18,7 @@
             <li><a href="/buttonspage">Blinkies Etc.</a></li>
           </ul></nav></div>
     <div id="flex">
-      <aside id="leftSidebar" style="margin-right: 10px;">
+      <aside id="leftSidebar">
         <h2>Essentials</h2>
         <div class="leftbox">
                         <ul style="padding-left:10px;">
@@ -209,10 +209,42 @@
     </div>
     </div>
     <footer>
-      <a href='https://copyheart.org/manifesto/'>♡</a> 2023 - the end of it all, Alex AngelFishes (fuckinf webmaster)
+      <a href='https://copyheart.org/manifesto/'>♡</a> 2023 - the end of it all, seven
     </footer>
   </body>
 <style>
+  @media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside#leftSidebar {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  aside#rightSidebar {
+    width: 87%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    overflow: hidden;
+    max-width: 90%;
+  }
+  footer {
+    overflow: hidden;
+  }
+}
     #container a:hover {
         color:aqua;
     }
@@ -223,8 +255,11 @@
       width: 300px !important;
       height: 50% !important;
         }
-    #rightSidebar {
+    aside#rightSidebar {
       margin-left: 20px !important;
+    }
+    aside#leftSideBar {
+      margin-right: 10px;
     }
     main {
       width: 1000px !important;

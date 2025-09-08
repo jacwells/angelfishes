@@ -20,7 +20,7 @@
               </ul></nav></div>
 
             <div id="flex">
-                <aside id="leftSidebar" style="margin-right: 10px;">
+                <aside id="leftSidebar">
                     <h1>Click here!</h1>
                         <ul style="padding-left:10px;">
                             <li><p><a href="https://angelfishes.neocities.org/wvsets" target="deemo">Radio sets</a></p></li>
@@ -40,10 +40,47 @@
 </footer>
   </body>
   <style>
-    #leftSidebar {
-      flex: .5 !important;
-      height: min-content;
-    }
+      @media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside#leftSidebar {
+    max-width: 100% !important;
+    margin-right: 0;
+    align-self: center;
+  }
+  aside#rightSidebar {
+    width: 87%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    overflow: hidden;
+    max-width: 100%;
+    padding: 2%;
+  }
+  footer {
+    overflow: hidden;
+  }
+  iframe {
+    margin-left: 0 !important;
+    max-width: 98%;
+    overflow: hidden;
+
+  }
+}
+
     iframe {
       margin-left: 50px;
       width: 700px !important;

@@ -31,7 +31,7 @@
       </div>
       <div class="flex">
         <div id="results">
-        <a href="https://www.exophase.com/steam/user/76561199204457215/"><img src="https://card.exophase.com/1/2997347.png"></a>
+        <a href="https://www.exophase.com/steam/user/76561199204457215/"><img id="exophase" src="https://card.exophase.com/1/2997347.png"></a>
                         <a href="/artgallery"><img src="https://web.archive.org/web/20091027122640/http://www.geocities.com/rotatingexhibits/Artist-Palettea-Ani.gif"></a>
         <a href="/collections"><img src="https://file.garden/ZZOi0LOs0CiXN99M/ladybug.gif" height="50px"></a>
         <a href="/poems"><img src="https://file.garden/ZZOi0LOs0CiXN99M/mimikyu/POKEMON_2019_TAKARA_TOMY_NUKU_NUKU_TIME_MIMIKYU_-removebg-preview.png" height="50px"></a>
@@ -47,6 +47,42 @@
 </footer>
 </body>
 <style>
+    @media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  aside#leftSidebar {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  aside#rightSidebar {
+    width: 87%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  img#exophase {
+    max-width: 90%;
+  }
+  main {
+    overflow: hidden;
+    max-width: 90%;
+  }
+  footer {
+    overflow: hidden;
+  }
+}
   main {
     width: 100% !important;
     overflow-x: hidden;

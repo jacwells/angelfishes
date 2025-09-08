@@ -495,14 +495,7 @@ section {
     min-width: 0;
     width: auto;
 }
-#kpop {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    min-width: 0;
-    width: auto;
-}
+
 a {
     color: #ffffff;
 }
@@ -556,6 +549,14 @@ a {
         right: 20px;
         bottom: 20px;
     }
-    
+      @media screen and (max-width: 950px) {
+        img {
+            max-width: 100%;
+        }
+        .overlay:active {
+            opacity: 1;
+            animation-duration: 20s;
+        }
+      }
 </style>
 </html>
