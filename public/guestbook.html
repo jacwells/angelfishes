@@ -19,7 +19,6 @@
   <li><a href="/vkei">Music</a></li>
   <li><a href="/linkspg">Link Library</a></li>
   <li><a href="/buttonspage">Blinkies Etc.</a></li>
-  <li><a href="/secret">Secret</a></li>
 </ul></nav></div>
 
 <main>
@@ -27,13 +26,51 @@
 <script src="comment-widget.js"></script>
 </main>
 <footer>
-  <a href='https://copyheart.org/manifesto/'>♡</a> 2023 - the end of it all, Alex AngelFishes (fuckinf webmaster)
+  <a href='https://copyheart.org/manifesto/'>♡</a> 2023 - the end of it all, seven
 </footer>
 </body>
 <style>
   p {
     text-align: justify;
     text-justify: inter-word;
+  }
+  @media screen and (max-width: 950px) {
+  div#sticker1, div#sticker2, div#sticker3, div#sticker4, div#sticker5, div#sticker6, div#jelly1 {
+    display: none;
+  }
+  nav#navbar {
+    width: 98%;
+  }
+  nav#navbar ul li a{
+    font-size: smaller;
+  }
+  div#flex {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  aside#leftSidebar {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  aside#rightSidebar {
+    width: 87%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  main {
+    max-width: 90%;
+    overflow: visible;
+    height: 100%;
+  }
+  #c_widget {
+    overflow: visible;
+  }
+  footer {
+    overflow: hidden;
+  }
   }
 </style>
 </html>
